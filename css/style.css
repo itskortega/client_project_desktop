@@ -208,6 +208,11 @@ footer p a {
   white-space: nowrap;
 }
 
+footer h2 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
 /* Citation for footer social icons: https://simpleicons.org */
 .social-links li {
   display: inline-block;
@@ -456,6 +461,7 @@ button:focus {
     grid-row: 1 / 3;
   }
  
+  footer h2,
   footer h3 {
     margin-top: 0;
   }
