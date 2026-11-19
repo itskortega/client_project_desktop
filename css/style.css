@@ -1,0 +1,493 @@
+body {
+  font-family: 'Nunito Sans', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+/*for accessibility*/
+a:focus {
+  outline: 3px solid #00274c;
+}
+
+/* Skip link: hidden until it has focus */
+header > a {
+  display: block;
+  position: absolute;  
+  left: 0;              
+  top: -100px;          
+  color: #ffffff;
+  padding: 14px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid #00274c;
+}
+
+header > a:focus {
+  top: 0;
+  background-color: #ffcb05;
+  color: #00274c;
+  padding: 10px;
+}
+
+/* Header and nav */
+header {
+  background-color: #00274c;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+
+header img {
+  width: 15%;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  font-size: 13px;
+  line-height: 1.2;
+  border: 2px solid #ffcb05;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: #ffcb05;
+  color: #00274c;
+}
+
+nav a[aria-current="page"] {
+  background-color: #ffcb05;
+  color: #00274c;
+}
+
+
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 20px 0 15px;
+}
+
+/* The main content section */
+main section {
+  padding: 25px 15px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  color: #00274c;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #00274c;
+  margin-top: 30px;
+}
+
+p {
+  padding-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 5px;
+}
+ 
+th, td {
+  padding: 10px;
+  text-align: left;
+  background-color: #f2f4f6;
+}
+
+
+/* YouTube video and images */
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  border-radius: 10px;
+}
+
+main img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* 2 column grid*/
+main ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+main li {
+  background-color: #f2f4f6;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 16px;
+  margin-top: 10px
+}
+
+article {
+  border-left: 5px solid #ffcb05;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+article a {
+  color: #00274c;
+  font-weight: bold;
+}
+
+/* No numbers for steps */
+article ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Newsletter box */
+aside {
+  background-color: #f2f4f6;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 15px;
+}
+
+aside div a {
+  display: block;
+  background-color: #ffcb05;
+  color: #00274c;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+aside a {
+  color: #00274c;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f4f6;
+  padding: 20px 15px;
+}
+
+footer a {
+  display: block;
+  padding: 8px 0;
+  color: #00274c;
+}
+
+footer p a {
+  display: inline;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* Citation for footer social icons: https://simpleicons.org */
+.social-links li {
+  display: inline-block;
+  margin-right: 15px;
+}
+ 
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+
+/* New 404 page */
+.error-page {
+  text-align: center;
+}
+
+.error-code {
+  font-size: 14px;
+  font-weight: bold;
+  color: #00274c;
+}
+
+.error-page h1 {
+  font-size: 36px;
+  color: #00274c;
+  padding: 10px 0;
+}
+
+.error-text {
+  font-size: 18px;
+}
+
+.error-page a {
+  display: inline-block;
+  background-color: #ffcb05;
+  color: #00274c;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  margin: 15px 0;
+}
+
+.error-page a:hover,
+.error-page a:focus {
+  background-color: #00274c;
+  color: #ffffff;
+}
+
+.error-page img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+.desktop-only {
+  display: none;
+}
+
+/*New form!*/ 
+
+form {
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #00274c;
+}
+
+input, select, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 2px solid #00274c;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+textarea {
+  height: 120px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid #00274c;
+  outline-offset: 2px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  color: #00274c;
+  background-color: #ffcb05;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: #00274c;
+  color: #ffffff;
+}
+
+
+/* New Desktop layout */
+
+@media (min-width: 992px) {
+
+  header {
+  padding: 15px 10%;    
+  }
+ 
+  body {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  header img {
+    width: 80px;
+  }
+ 
+  nav ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 12px;
+  }
+ 
+  nav a {
+    font-size: 16px;
+    padding: 12px;
+  }
+ 
+  h1 {
+    font-size: 40px;
+    padding: 30px 0 10px;
+  }
+ 
+  main img {
+    width: 49%;              
+    margin: 20px 0 20px 0;
+  }
+
+  iframe {
+    width: 49%;        
+    display: block;
+    margin: 20px 0;
+  }
+
+  /* Home page the cards in rows of three */
+  .card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .card-row > h2,
+  .card-row > p {
+    grid-column: 1 / -1;
+  }
+
+  .card-row article {
+    background-color: #f2f4f6;
+    border-left: none;
+    border-top: 5px solid #ffcb05;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+ /* Prep page: two columns instead of three */
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* First box: plain intro text across the full width, not a card */
+  .two-col article:first-of-type {
+    grid-column: 1 / -1;
+    background-color: transparent;
+    border-top: none;
+    padding: 0;
+  }
+
+  .two-col ul {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .two-col li {
+    background-color: transparent;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  main section {
+    padding: 25px 10%;
+  }
+
+  aside {
+    margin: 20px 10%;
+  }
+ 
+  footer section {
+    text-align: right;
+  }
+
+
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    padding: 30px 10%;     
+  }
+ 
+  footer > p:first-of-type {
+    grid-column: 1;
+    grid-row: 1;
+  }
+ 
+  footer address {
+    grid-column: 1;
+    grid-row: 2;
+  }
+ 
+  footer section {
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+ 
+  footer h3 {
+    margin-top: 0;
+  }
+ 
+  footer > p:last-of-type {
+    grid-column: 1 / -1;
+    border-top: 1px solid #c8ccd0;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .desktop-only {
+    display: inline;
+  }
+
+    /* Why Use section: photos in 2-column grid, like the cards */
+  .photo-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 10px;
+  }
+
+  .photo-row > h2,
+  .photo-row > p,
+  .photo-row > ul {
+    grid-column: 1 / -1;
+  }
+
+  .photo-row img {
+    width: 100%;
+  }
+
+}
+
+

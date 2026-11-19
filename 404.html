@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel= "stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <title>Page Not Found | UMSI</title>
+</head>
+
+<body>
+
+    <header>
+        <a href="#main">Skip to Main Content</a>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="prep.html">Preparing for Your Journey</a></li>
+                <li><a href="navigating_your_active_project.html">Navigating Your Active Project</a></li>
+                <li><a href="translating.html">Translating Your Impact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main id="main">
+        <section class="error-page">
+            <p class="error-code">404 Error</p>
+            <h1>Oh nuts! We can't find the page you're looking for.</h1>
+            <p class="error-text">Even our best campus squirrels couldn't track this one down.</p>
+            <a href="index.html">Return to home</a>
+            <img src="images/squirrels.png" alt="Four gray squirrels in different poses in front of yellow and blue star shapes">
+        </section>
+    </main>
+
+    <footer>
+     <p>University of Michigan School of Information | <a href="https://www.si.umich.edu/programs/engaged-learning/about-engaged-learning-office">Engaged Learning Office</a> | <a href="mailto:umsi.engagement@umich.edu">umsi.engagement@umich.edu</a> | <a href="index.html#contact">Contact form</a></p>
+ <section>
+    <h3>Follow UMSI</h3>
+    <ul class="social-links">
+      <li><a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/"><img src="images/linkedin.svg" alt="UMSI on LinkedIn"></a></li>
+      <li><a href="https://www.instagram.com/umschoolofinformation"><img src="images/instagram.svg" alt="UMSI on Instagram"></a></li>
+      <li><a href="https://www.facebook.com/uomsi/"><img src="images/facebook.svg" alt="UMSI on Facebook"></a></li>
+      <li><a href="https://www.youtube.com/user/schoolofinformation"><img src="images/youtube.svg" alt="UMSI on YouTube"></a></li>
+      <li><a href="https://x.com/umsi"><img src="images/x.svg" alt="UMSI on X"></a></li>
+    </ul>
+  </section>
+
+        <p>&copy; <span id="year">2026</span> Regents of the University of Michigan</p>
+    </footer>
+    <script>
+        /* Citation: CodexWorld, https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/ */
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
